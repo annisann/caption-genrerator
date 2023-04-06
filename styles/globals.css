@@ -21,13 +21,23 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0rem 3rem;
 }
 
 footer {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 0.5rem;
   width: 100%;
   font-size:1.5em;
   text-align: center;
+}
+
+footer p {
+  font-size: medium;
+  font-weight: 500;
+  background: linear-gradient(120deg, #d6a0d6 0%, #1292a0 100%);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

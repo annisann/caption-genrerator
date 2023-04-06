@@ -20,12 +20,12 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main>
-				<Text b size={18}> {caption} </Text>
+			<Text b size={18}> {caption} </Text>
 				<Spacer/>
 				<Button onPress={getCaption}> generate </Button>
 			</main>
 			<footer>
-				<p> made with genrenator api </p>
+				<p> {"made with  ♡ ♥ by ennoza, with genrerator api"} </p>
 			</footer>
 		</>
 	)
