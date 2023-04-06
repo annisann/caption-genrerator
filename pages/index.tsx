@@ -29,7 +29,12 @@ export default function Home() {
 					onPress={getCaption}> generate </Button>
 			</main>
 			<footer>
-				<p> {"made with  ♡ ♥ by ennoza, with genrerator api"} </p>
+				<p>
+					{"♡ ennoza, with "}
+					<a href="https://binaryjazz.us/genrenator-api/">
+						genrerator api
+					</a>
+				</p>
 			</footer>
 		</>
 	)
