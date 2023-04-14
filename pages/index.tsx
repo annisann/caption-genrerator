@@ -3,11 +3,6 @@ import { Text, Button, Spacer } from '@nextui-org/react'
 import { useState } from 'react'
 import confetti from 'canvas-confetti'
 
-//   const handleConfetti = () => {
-//     confetti();
-//   };
-
-
 export default function Home() {
 	const [caption, setCaption] = useState("")
 
