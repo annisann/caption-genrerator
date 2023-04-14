@@ -1,11 +1,18 @@
 import Head from 'next/head'
 import { Text, Button, Spacer } from '@nextui-org/react'
 import { useState } from 'react'
+import confetti from 'canvas-confetti'
+
+//   const handleConfetti = () => {
+//     confetti();
+//   };
+
 
 export default function Home() {
 	const [caption, setCaption] = useState("")
 
 	const getCaption = async () => {
+		confetti()
 		await fetch("https://binaryjazz.us/wp-json/genrenator/v1/story/")
 			.then(async (response) => await response.json())
 			.then(result => setCaption(result))
