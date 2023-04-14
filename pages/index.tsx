@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Text, Button, Spacer } from '@nextui-org/react'
 import { useState } from 'react'
 import confetti from 'canvas-confetti'
+import { AUTHOR, DESCRIPTION, KEYWORD } from '@/lib/consts'
 
 export default function Home() {
 	const [caption, setCaption] = useState("")
@@ -17,7 +18,9 @@ export default function Home() {
 		<>
 			<Head>
 				<title> caption genrerator </title>
-				<meta name="description" content="made with genrerator api" />
+				<meta name="author" content={AUTHOR}/>
+				<meta name="description" content={DESCRIPTION} />
+				<meta name="keyword" content={KEYWORD}/>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
